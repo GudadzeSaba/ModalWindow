@@ -53,8 +53,6 @@ p {
   font-size: 1.8rem;
 }
 
-/* -------------------------- */
-/* CLASSES TO MAKE MODAL WORK */
 .hidden {
   display: none;
 }
@@ -65,7 +63,6 @@ p {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 70%;
-
   background-color: white;
   padding: 6rem;
   border-radius: 5px;
@@ -82,4 +79,31 @@ p {
   background-color: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(3px);
   z-index: 5;
+}
+
+/* Media Query for Mobile Devices */
+@media only screen and (max-width: 768px) {
+  body {
+    align-items: center;
+  }
+
+  .show-modal {
+    margin: 3rem 1rem;
+    font-size: 1.8rem;
+    padding: 1.25rem 2.5rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  p {
+    font-size: 1.4rem;
+  }
+
+  .modal {
+    width: 90%;
+    padding: 3rem;
+  }
 }
